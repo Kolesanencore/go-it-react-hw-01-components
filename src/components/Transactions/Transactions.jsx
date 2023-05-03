@@ -29,11 +29,11 @@ TransactionHistory.protoTypes = {
   statData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      type: PropTypes.string,
-      amount: PropTypes.string,
-      currency: PropTypes.string,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
 };
 
 export default TransactionHistory;
